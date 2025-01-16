@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import { federation } from "@module-federation/vite";
 import vue from "@vitejs/plugin-vue";
-);
+
 export default defineConfig({
   server: {
     port: 4000,
