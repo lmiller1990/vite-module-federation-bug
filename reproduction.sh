@@ -1,6 +1,7 @@
 # Start the first server in the background and capture its PID
 (
   cd mfe-host
+  pnpm install
   pnpm run build
   pnpx serve -p 3000 --cors dist &
   echo $! > /tmp/mfe-host.pid
@@ -9,6 +10,7 @@
 # Start the second server in the background and capture its PID
 (
   cd mfe-client
+  pnpm install
   pnpm run build
   pnpx serve -p 4000 --cors dist &
   echo $! > /tmp/mfe-client.pid
