@@ -3,6 +3,7 @@ import { federation } from "@module-federation/vite";
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
+  base: "http://localhost:4000",
   server: {
     port: 4000,
   },

@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "http://localhost:3000",
   server: {
     port: 3000,
   },
